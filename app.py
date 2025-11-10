@@ -300,7 +300,8 @@ print("✅ System Ready!\n")
 # ============================================================================
 @app.route('/')
 def home():
-    return render_template('index-advanced-all-models.html')  # Ensure file exists in /templates
+    return render_template('index.html')
+  # Ensure file exists in /templates
 
 @app.route('/api/recommend/all-models', methods=['POST'])
 def get_all_models_recommendation():
